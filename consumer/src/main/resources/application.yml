@@ -1,0 +1,11 @@
+server:
+  port: 0
+
+spring:
+  kafka:
+    bootstrap-servers: 43.201.245.29:9092
+    consumer:
+      group-id: email-send-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
